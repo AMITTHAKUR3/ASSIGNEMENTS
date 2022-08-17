@@ -1,0 +1,19 @@
+
+
+import numpy as np
+import math
+​
+def var(data):
+    data_len=len(data)
+    Ex=sum(data)/data_len
+    deviation=[(x-Ex)**2 for x in data]
+    variance=sum(deviation)/data_len
+    standard_devaition=math.sqrt(variance)
+    return Ex,variance,standard_devaition
+​
+data=[1,2,3,4,5,6]
+var(data)
+data=[1,2,3,4,5,6]
+var(data)
+​
+(3.5, 2.9166666666666665, 1.707825127659933)
